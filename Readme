@@ -1,3 +1,4 @@
+# Resume -Analyzer
 This project evaluates a candidate's resume against a job description (JD) using semantic comparison. The evaluation is done based on multiple factors, including skills, education, experience, and job role alignment. The comparison leverages a language model from HuggingFace for semantic understanding, and uses ChromaDB to manage job descriptions and resumes.
 
 Overview
