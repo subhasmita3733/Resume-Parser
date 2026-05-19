@@ -1,0 +1,75 @@
+This project evaluates a candidate's resume against a job description (JD) using semantic comparison. The evaluation is done based on multiple factors, including skills, education, experience, and job role alignment. The comparison leverages a language model from HuggingFace for semantic understanding, and uses ChromaDB to manage job descriptions and resumes.
+
+Overview
+The goal of this project is to assess the alignment between a job description and a candidate's resume. The evaluation involves parsing the job description and resume into structured fields such as Skills, Education, Job Role, and Experience. These are then compared for semantic relevance using a state-of-the-art language model (LLM) from HuggingFace.
+The result of this evaluation is output as a structured JSON file that shows match percentages between the resume and JD, as well as an overall score.
+
+Features 
+Semantic Evaluation: Evaluates resumes based on meaning, not exact matches of keywords.Field-Based Comparison: Compares individual fields such as Skills, Education, Job Role, and Experience.ChromaDB Integration: Manages and queries job descriptions and resumes stored in ChromaDB.HuggingFace LLM: Uses the Llama model for semantic understanding of the resume and job description.
+
+/resume_jd_comparison
+├── Extraction
+│   ├── resume.py         # Extracts relevant data from resumes (parsing, cleaning, etc.)
+│   ├── resume.json       # Sample JSON file containing parsed resume data
+│   ├── jd.py             # Extracts relevant data from job descriptions
+│   └── jd.json           # Sample JSON file containing parsed job description data
+├── Embedding
+│   ├── resume.py         # Handles embedding and storing resumes in ChromaDB
+│   ├── chroma_db_resume  # Directory for ChromaDB instance for storing resumes
+│   ├── jd.py             # Handles embedding and storing job descriptions in ChromaDB
+│   └── chroma_db_jd      # Directory for ChromaDB instance for storing job descriptions
+├── LLM
+│   └── compare.py        # Main logic to compare resumes against job descriptions using LLM
+├── main.py               # Entry point for the application that triggers the comparison
+
+
+
+Usage
+Running the Evaluation
+To evaluate resumes against job descriptions, run the following command:
+                                                                        python main.py
+
+The script will:
+Load the job description and resume data from ChromaDB.
+Compare them based on structured fields (Skills, Education, Experience, Job Role).
+Query the HuggingFace LLM for semantic evaluation.
+Output the results as a structured JSON.
+[
+  {
+    "resume_filename": "resume_1_vs_jd_1",
+    "Skills": {
+      "match_pct": 95,
+      "resume_value": "Python, Machine Learning",
+      "job_description_value": "Python, ML, Data Science",
+      "explanation": "The resume includes Python and Machine Learning, which are highly relevant to the job description."
+    },
+    "Education": {
+      "match_pct": 95,
+      "resume_value": "M.Tech in Computer Science",
+      "job_description_value": "B.Tech in Computer Science",
+      "explanation": "The education is closely aligned, but the resume has a higher qualification."
+    },
+    "Job Role": {
+      "match_pct": 90,
+      "resume_value": "ML Engineer",
+      "job_description_value": "Machine Learning Engineer",
+      "explanation": "Job titles are semantically equivalent."
+    },
+    "Experience": {
+      "match_pct": 80,
+      "resume_value": "3 years in ML",
+      "job_description_value": "3–5 years in ML",
+      "explanation": "Experience is relevant but slightly below the job description requirement."
+    },
+    "OverallMatchPercentage": 87.5,
+    "why_overall_match_is_this": "High match in Skills and Job Role, slightly lower in Experience.",
+    "AI_Generated_Estimate_Percentage": 95
+  }
+]
+
+
+
+
+
+
+               

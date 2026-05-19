@@ -1,0 +1,28 @@
+{
+  "skill": [
+    "TensorFlow",
+    "PyTorch",
+    "Python",
+    "AWS",
+    "Azure",
+    "GCP",
+    "Generative Adversarial Networks",
+    "Variational Autoencoders"
+  ],
+  "education": [
+    "B Tech/M Tech in Computer/IT or related field from reputed engineering colleges"
+  ],
+  "experience": [
+    "3 - 6 years of hands-on experience in ML domain",
+    "Developing generative models",
+    "Deep learning frameworks such as TensorFlow or PyTorch",
+    "Neural network architectures, optimization techniques, and training methodologies",
+    "Cloud platforms like AWS/Azure/GCP"
+  ],
+  "job role": [
+    "ML Engineer/Generative AI Engineer"
+  ],
+  "other information": [
+    "InvoLead is an equal opportunities employer and welcomes applications from all sections of society and does not discriminate on grounds of race, religion, or belief, ethnic or national origin, disability, age, citizenship, marital, domestic or civil partnership status, sexual orientation, gender identity, or any other basis as protected by applicable law."
+  ]
+}

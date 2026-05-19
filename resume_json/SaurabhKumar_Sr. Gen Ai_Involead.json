@@ -1,0 +1,41 @@
+{
+  "skill": [
+    "Python",
+    "Machine Learning",
+    "MySQL",
+    "Git",
+    "Databricks",
+    "Azure ML",
+    "GenAI",
+    "Model Evaluation",
+    "Azure Cloud Service",
+    "RestAPI",
+    "Predictive Modeling",
+    "Data Analytics",
+    "Statistics",
+    "Vector Embedding",
+    "AWS Cloud",
+    "Model training",
+    "Data Visualization",
+    "LLMs"
+  ],
+  "education": [
+    "B.Tech from Kalinga Institute of Industrial Technology",
+    "AISSCE (Class XII) from Resonance School",
+    "AISSE (Class X) from Sunshine Prep./ High School"
+  ],
+  "experience": [
+    "AI/Machine Learning developer at Tata Consultancy Services \u2014 Implemented GenAI in a smart chatbot project for a Life Science American Client, where the managers can track the resources under them and assign the role that resources wanted from the chatbot itself. Implemented a QnA based AI solution for a Life Science stakeholder(for Chemical lab Scientist), where scientists can be able to implement valuable insights from their experiment that has been stored in the pdf. We have basically implemented this using Embedding and LLM techniques.",
+    "AI/Machine Learning Engineer with 3+ years of hands-on experience contributing to a high-impact Intelligent Data Foundation and LCNC web development projects at Accenture \u2014 Successfully implemented Machine learning models for predictive analysis of credit card fraud transaction for a few BFSI US client which involves several steps like data injection, preprocessing,EDA, Model development(Logistics regression, Decision Tree, Random Forest Classifier, XGBoost classifier), model selection and evaluation, hyperparameter tuning with an accuracy of above 97%. Successfully created a predictive model for cancer level detection for a pharmaceutical which involves several steps like data collection, data preprocessing, Feature Engineering, Model Selection, Model Training, Evaluation and Hyperparameter tuning using Machine Learning with an accuracy of 98.97%. Delivered PDF classification using AI for a pharmaceutical involves automatically categorizing or labeling PDF documents based on their content. This task was approached using various machine learning, GenAI and LLM techniques. Delivered a smart chatbot solution leveraging Generative AI (GenAI) for dynamic user interaction and response generation. Collaborated closely with the front-end team to integrate the model via REST APIs, ensuring seamless UX. Implemented CI/CD pipelines for automated deployment and version control, and utilized AI/ML techniques for prompt engineering and response optimization."
+  ],
+  "job role": [
+    "Data Scientist/ML Engineer"
+  ],
+  "other information": [
+    "Certifications: Data Science Bootcamp (Analytics Vidhya), Machine Learning (Coursera- Standford University), Microsoft Azure Fundamentals (AZ-900)",
+    "Languages spoken: Not specified",
+    "Hobbies and interests: Not specified",
+    "Awards: Not specified",
+    "Objective: Looking for a role in Data Scientist/ML Engineer"
+  ]
+}
